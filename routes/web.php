@@ -19,11 +19,7 @@ Route::post(
     [UploadFileController::class, 'uploadImages']
 );
 
-
-Route::get('/upload_images', function () {
-    return view('upload-image');
-});
-
+Route::view('/upload_images', 'upload-image');
 
 Route::get(
     '/images',
